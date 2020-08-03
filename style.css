@@ -1,0 +1,31 @@
+#container {
+  display: grid;
+  grid-template-areas:
+    "title-container"
+    "main";
+  width: 700px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+#title-container {
+  grid-area: title-container;
+  width: 100%;
+  text-align: center;
+}
+#main {
+  grid-area: main;
+  padding: 5%;
+  font-size: large;
+  border-radius: 10px;
+  background-color: rgba(66, 111, 245);
+}
+@media (max-width: 730px) {
+  #container {
+    width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  #container {
+    width: 400px;
+  }
+}
